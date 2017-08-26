@@ -22,6 +22,14 @@
     "node": ">=6"
   },
   "files": [
+    "*.md",
     "index.js"
+  ],
+  "keywords": [
+    "connect",
+    "listen",
+    "port",
+    "tcp",
+    "open"
   ]
 }
