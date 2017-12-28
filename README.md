@@ -18,8 +18,8 @@ const connectPort = require('connect-port')
 connectPort({
   host: 'npmjs.com',
   port: 80,
-}).then(socklet => {
-  console.log(socklet.connecting)
+}).then(socket => {
+  console.log(socket.connecting)
 })
 // false
 ```
