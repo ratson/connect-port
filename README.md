@@ -23,3 +23,7 @@ connectPort({
 })
 // false
 ```
+
+## Related
+
+- [port-ready](https://github.com/ratson/port-ready) - Promise to wait until a port is ready to accept connection.
