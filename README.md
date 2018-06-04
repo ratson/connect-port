@@ -15,9 +15,8 @@ npm install connect-port --save
 ```js
 const connectPort = require('connect-port')
 
-connectPort({
+connectPort(80, {
   host: 'npmjs.com',
-  port: 80,
 }).then(socket => {
   console.log(socket.connecting)
 })

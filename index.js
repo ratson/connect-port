@@ -4,7 +4,7 @@ const net = require('net')
 
 const pEvent = require('p-event')
 
-async function connectPort({ host, port, timeout = 30000 }) {
+async function connectPort(port, { host = 'localhost', timeout = 30000 }) {
   const socket = net.connect({
     host,
     port,

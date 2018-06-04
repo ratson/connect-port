@@ -3,9 +3,8 @@ import test from 'ava'
 import connectPort from '..'
 
 test('resolve to socket', async t => {
-  const socket = await connectPort({
+  const socket = await connectPort(80, {
     host: 'npmjs.com',
-    port: 80,
   })
   t.is(socket.connecting, false)
   t.truthy(socket.on)
@@ -13,9 +12,8 @@ test('resolve to socket', async t => {
 
 test('throws TimeoutError', async t => {
   await t.throws(
-    connectPort({
+    connectPort(1, {
       host: 'npmjs.com',
-      port: 1,
       timeout: 1,
     })
   )
@@ -23,9 +21,8 @@ test('throws TimeoutError', async t => {
 
 test('throws for not found domain', async t => {
   await t.throws(
-    connectPort({
+    connectPort(80, {
       host: 'unkown.example.com',
-      port: 80,
     })
   )
 })
