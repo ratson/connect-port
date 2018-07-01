@@ -14,7 +14,8 @@
     "ava": "^0.25.0",
     "eslint": "^5.0.1",
     "eslint-config-concise": "^0.27.3",
-    "eslint-config-concise-ava": "^0.23.0"
+    "eslint-config-concise-ava": "^0.23.0",
+    "get-port": "^3.2.0"
   },
   "repository": "ratson/connect-port",
   "license": "MIT",
