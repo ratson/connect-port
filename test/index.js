@@ -15,7 +15,7 @@ test('throws TimeoutError', async t => {
     connectPort(1, {
       host: 'npmjs.com',
       timeout: 1,
-    })
+    }),
   )
 })
 
@@ -23,6 +23,6 @@ test('throws for not found domain', async t => {
   await t.throws(
     connectPort(80, {
       host: 'unkown.example.com',
-    })
+    }),
   )
 })
